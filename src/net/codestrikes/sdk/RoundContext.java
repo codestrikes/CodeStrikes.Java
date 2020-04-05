@@ -36,4 +36,12 @@ public class RoundContext {
     public int getOpponentDamage() {
         return opponentDamage;
     }
+
+    public int getMyLifePoints() {
+        return myLifePoints;
+    }
+
+    public int getOpponentLifePoints() {
+        return opponentLifePoints;
+    }
 }

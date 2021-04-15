@@ -33,6 +33,10 @@ public class ReadonlyMoveCollection
         return moveList.stream().anyMatch(x -> x.getType() == MoveType.Defense && x.getArea() == area);
     }
 
+    public boolean hasAttack(Area area){
+        return moveList.stream().anyMatch(x -> x.getType() == MoveType.Attack && x.getArea() == area);
+    }
+
     public int sumEnergy(){
         return moveList.stream().mapToInt(x -> x.getEnergy()).sum();
     }
